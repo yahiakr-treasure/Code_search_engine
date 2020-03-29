@@ -1,0 +1,15 @@
+pandas
+numpy
+tensorboard
+torch
+tqdm
+scipy
+requests
+requests-oauthlib
+requests-toolbelt
+jsonschema
+Flask
+Flask-Cors
+Flask-RESTful
+transformers==2.4.1
+nmslib

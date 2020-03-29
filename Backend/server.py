@@ -19,11 +19,11 @@ app = Flask(__name__)
 cors = CORS(app)
 
 ## Getting files from google drive:
-functions = ["", "./data/functions.json"]
-docstrings = ["", "./data/docstrings.csv"]
-lineage = ["", "./data/lineage.csv"]
-docstrings_vecs = ["", "./data/docstrings_avg_vec.npy"]
-model_path = ["", "./model"]
+functions = ["1-Ks6uc_67FwGcIun9cXOb9Pwfe5icyMK", "./data/functions.json"]
+docstrings = ["1-D4s2DtE2-V4sqlmkP4wjgRzTseBbzLW", "./data/docstrings.csv"]
+lineage = ["1-SpoXT2xdzNZ8vqRoLVO-xkv4K0EFGrB", "./data/lineage.csv"]
+docstrings_vecs = ["1TCiOTxkOEkC0nmKjOpf6VS_MCho5SxdX", "./data/docstrings_avg_vec.npy"]
+model_path = ["1kc9qnH3AYvtITpCpnE87_Otd8Az7Gslz", "./model"]
 
 download_file_from_google_drive(functions[0], functions[1])
 download_file_from_google_drive(docstrings[0], docstrings[1])

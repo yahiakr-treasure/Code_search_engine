@@ -1,0 +1,116 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+        <img src="../assets/slack.png" style="height:20px; width:20px">
+      Code Discover</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+    </div>
+  </div>
+</nav>
+
+<br><br><br>
+
+<!-- Page Content -->
+<div class="row" >
+  <div class="col-md-3"></div>
+  <div class="col-md-6" align-items-center>
+          <div class="row">
+              <div class="col-md-6 ml-auto mr-auto text-center">
+              <h4 class="card-title">
+                  <img src="../assets/slack.png" style="height:200px; width:200px">
+              </h4>
+              <p class="category">Search your code or something like that (slogan).</p>
+              </div>
+          </div>
+          <form>
+              <div class="form-group">
+                  <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="button">Search</button>
+                      </div>
+                  </div>
+              </div>
+          </form>
+          <br><br>
+          <div class="card" style="">
+              <div class="card-header">
+                Github Repo : <a href="https://github.com/google/code-prettify">https://github.com/google/code-prettify</a>
+              </div>
+              <div class="card-body">
+                  <pre class="prettyprint" style="border: none">
+def post():
+  posted_data = request.get_json()
+  user_input = posted_data['input']
+
+  input_ids = torch.tensor(tokenizer.encode(user_input, add_special_tokens=True)).unsqueeze(0)
+
+  outputs = model(input_ids, masked_lm_labels=input_ids)
+
+  embeddings = outputs[2][-1].detach().numpy()[0]
+
+  size = embeddings.shape[0]
+  sum_array = [sum(x) for x in zip(*embeddings)]
+  avg_array = [sum_array[i]/size for i in range(len(sum_array))]
+
+  ids, distances = index.knnQuery(avg_array, k=10)
+
+  functions = []
+  sources = []
+  for elem in ids:
+  functions.append(df_function[elem])
+  sources.append(df_lineage[elem])
+
+  return response
+                  </pre>
+              </div>
+          </div>
+
+          <br>
+          <div class="card" style="">
+              <div class="card-header">
+                Github Repo
+              </div>
+              <div class="card-body">
+                  <pre class="prettyprint" style="border: none">
+def post():
+  posted_data = request.get_json()
+  user_input = posted_data['input']
+
+  input_ids = torch.tensor(tokenizer.encode(user_input, add_special_tokens=True)).unsqueeze(0)
+
+  outputs = model(input_ids, masked_lm_labels=input_ids)
+
+  embeddings = outputs[2][-1].detach().numpy()[0]
+
+  size = embeddings.shape[0]
+  sum_array = [sum(x) for x in zip(*embeddings)]
+  avg_array = [sum_array[i]/size for i in range(len(sum_array))]
+
+  ids, distances = index.knnQuery(avg_array, k=10)
+
+  functions = []
+  sources = []
+  for elem in ids:
+  functions.append(df_function[elem])
+  sources.append(df_lineage[elem])
+
+  return response
+                  </pre>
+              </div>
+          </div>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<!-- <footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+  </div>
+</footer> -->

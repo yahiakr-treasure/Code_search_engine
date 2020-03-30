@@ -30,7 +30,7 @@ Once we created and trained our model, we made an interface using  _Flask_. Our 
 
 We used  _Flask_  to connect the front-end and back-end and provide the user with a readable table that consists of a list of functions and its corresponding source URL in a run time comparable to that of Google.
 
-## My contribution within the team
+## My contribution
 I did (realised) the steps : 2 & 3. All the notebooks that i used are included in the repository.
 
 ## Challenges we ran into

@@ -28,14 +28,14 @@ Once we created and trained our model, we made an interface using  _Flask_. Our 
 
 **Step 5: Integrated back-end with the front-end**
 
-We used  _Flask_  to connect the front-end and back-end and provide the user with a readable table that consists of a list of functions and its corresponding source URL in a run time comparable to that of Google.
+We connected the front-end and back-end and provide the user with a readable table that consists of a list of functions and its corresponding source URL in a run time comparable to that of Google.
 
 ## My contribution
 I did (realised) the steps : 3 & 4. All the notebooks that i used are included in the repository.
 
 ## Challenges we ran into
 
-We wanted to host the app on Google’s  _AppEngine_; however, errors occurred during deployment which vastly increased the difficulty of publishing the app. We also faced severe computational limitations which limited the amount of data used to train our NLP model.
+We wanted to host the app on Google’s  _AppEngine_; however, errors occurred during deployment which vastly increased the difficulty of publishing the app. We also faced severe computational limitations which limited the amount of data used to train our model.
 
 ## Accomplishments that we're proud of
 
@@ -47,6 +47,6 @@ We as a team learned much about different skills that we were not very familiar 
 
 ## What's next
 
-DiscoverCode is implemented just for Python functions at the moment. Thus, whatever the user currently searches up (ex. how to add two numbers) will only show up for the programming language Python. We applied this restriction because we did not have ample time, or the computing power to include more data or more programming languages. For this reason, the future of DiscoverCode will be to implement other programming languages into its interface to support the desires of all developers. Also, due to difficulties with Google Cloud, we were not able to connect the front-end and back-end of our app successfully through a website, so we had to run it locally. In the future, we will make it open to the public.
+DiscoverCode is implemented just for Python functions at the moment. Thus, whatever the user currently searches up (ex. how to add two numbers) will only show up for the programming language Python. We applied this restriction because we did not have ample time, or the computing power to include more data or more programming languages. For this reason, the future of DiscoverCode will be to add other programming languages to support the desires of all developers. Also, due to difficulties with Google Cloud, we were not able to deploy our website, so we had to run it locally. In the future, we will make it open to the public.
 
 Devpost link of the project : [https://devpost.com/software/discovercode](https://devpost.com/software/discovercode)
